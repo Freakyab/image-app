@@ -53,3 +53,6 @@ yarn-error.*
 *.tsbuildinfo
 
 # @end expo-cli
+
+android/gradle/gradle.properties
+android/app/my-upload-key.keystore
