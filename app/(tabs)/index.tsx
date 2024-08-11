@@ -1,5 +1,5 @@
-import {  SafeAreaView } from "react-native";
-// import { StatusBar } from "expo-status-bar";
+import { SafeAreaView } from "react-native";
+import { setStatusBarBackgroundColor, StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather, MaterialIcons } from "@expo/vector-icons";
@@ -9,14 +9,14 @@ import ViewPage from "./../../components/screen/view";
 
 export default function HomeScreen() {
   const Tab = createBottomTabNavigator();
-
+  setStatusBarBackgroundColor("#121212", true);
   return (
     <SafeAreaView style={{ flex: 1 }}>
       {/* <StatusBar style="dark" backgroundColor="#121212" /> */}
       <NavigationContainer independent={true}>
         <Tab.Navigator
           screenOptions={{
-            headerStatusBarHeight:2,
+            headerStatusBarHeight: 2,
             tabBarStyle: {
               backgroundColor: "#121212",
               height: 60,

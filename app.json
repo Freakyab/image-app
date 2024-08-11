@@ -10,21 +10,21 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121212"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#121212"
+        "foregroundImage": "./assets/images/adaptive-icon.png"
       },
+
       "package": "com.aryan_bhisikar.imageapp"
     },
     "androidStatusBar": {
-      "backgroundColor": "rgba(0,0,0,0)",
       "barStyle": "light-content",
+      "backgroundColor": "#121212",
       "translucent": false
     },
     "web": {

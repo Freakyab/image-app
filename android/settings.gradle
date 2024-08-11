@@ -1,4 +1,4 @@
-rootProject.name = 'image-app'
+rootProject.name = 'imageApp'
 
 dependencyResolutionManagement {
   versionCatalogs {
