@@ -1,20 +1,22 @@
-import { Image, StyleSheet, Platform, SafeAreaView } from "react-native";
+import { Text, StyleSheet, Platform, SafeAreaView, View } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather, MaterialIcons } from "@expo/vector-icons";
 import React from "react";
-import Upload from "./../../components/screen/view";
-import ViewPage from "./../../components/screen/upload";
+import Upload from "./../../components/screen/upload";
+import ViewPage from "./../../components/screen/view";
 
 export default function HomeScreen() {
   const Tab = createBottomTabNavigator();
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
+      <StatusBar style="light" backgroundColor="#121212" />
       <NavigationContainer independent={true}>
-        <StatusBar style="light" backgroundColor="black" />
         <Tab.Navigator
           screenOptions={{
+            headerStatusBarHeight:2,
             tabBarStyle: {
               backgroundColor: "#121212",
               height: 60,
@@ -50,22 +52,3 @@ export default function HomeScreen() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
-  },
-});
