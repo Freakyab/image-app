@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "image-app",
+    "name": "imageApp",
     "slug": "image-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,9 +18,14 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#121212"
       },
       "package": "com.aryan_bhisikar.imageapp"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "rgba(0,0,0,0)",
+      "barStyle": "light-content",
+      "translucent": false
     },
     "web": {
       "bundler": "metro",
